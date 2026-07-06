@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato Clone - Simple Dummy Website</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Style Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="nav-container">
+      <h1 class="logo" id="logo-btn">zomato</h1>
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search-input" placeholder="Search for restaurants, cuisines or dishes...">
+      </div>
+      <div class="cart-btn" id="cart-toggle">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="cart-badge" id="cart-badge-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HOME SCREEN SECTION -->
+  <main id="home-view" class="container">
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+      <h2>zomato</h2>
+      <p>Discover the best food & drinks in your city</p>
+    </section>
+
+    <!-- Services Quick Select -->
+    <section class="services">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400" alt="Order Online">
+        <h3>Order Online</h3>
+        <p>Stay home and order to your doorstep</p>
+      </div>
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400" alt="Dining Out">
+        <h3>Dining Out</h3>
+        <p>View the city's favourite dining venues</p>
+      </div>
+    </section>
+
+    <!-- Restaurant Listings Grid -->
+    <section class="restaurant-listings">
+      <h3 class="section-title">Popular Restaurants</h3>
+      <div class="grid" id="restaurant-grid">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <!-- RESTAURANT DETAILS VIEW -->
+  <main id="details-view" class="container hidden">
+    <button class="back-btn" id="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Restaurants</button>
+    
+    <div class="restaurant-header">
+      <div class="restaurant-info">
+        <h2 id="rest-name">Restaurant Name</h2>
+        <p id="rest-cuisines" class="cuisines">Cuisines list</p>
+        <p id="rest-address" class="address">Restaurant Address</p>
+      </div>
+      <div class="restaurant-rating" id="rest-rating">4.5 <i class="fa-solid fa-star"></i></div>
+    </div>
+
+    <div class="menu-container">
+      <h3>Menu</h3>
+      <div class="menu-list" id="menu-list">
+        <!-- Rendered by JavaScript -->
+      </div>
+    </div>
+  </main>
+
+  <!-- CART SLIDE PANEL -->
+  <aside class="cart-panel hidden" id="cart-panel">
+    <div class="cart-header">
+      <h3>My Cart</h3>
+      <button class="close-cart" id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-body">
+      <div id="cart-items">
+        <!-- Rendered by JavaScript -->
+      </div>
+      <div class="cart-total">
+        <span>Grand Total:</span>
+        <strong id="cart-total-amount">₹0</strong>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <button class="order-btn" id="order-btn">Place Order</button>
+    </div>
+  </aside>
+
+  <div class="backdrop hidden" id="backdrop"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <h2>zomato</h2>
+      <p>© 2026 Zomato Clone. Created for demonstration purposes.</p>
+    </div>
+  </footer>
+
+  <!-- Script Link -->
+  <script src="app.js"></script>
+</body>
+</html>
